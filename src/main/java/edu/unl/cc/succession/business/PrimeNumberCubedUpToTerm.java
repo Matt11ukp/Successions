@@ -18,7 +18,7 @@ public class PrimeNumberCubedUpToTerm extends PrimeNumber {
         while(countTerm < limit){
             this.printableTerms.append(currentTerm).append("^")
                     .append("3").append(" +");
-            result = (long) Math.pow(currentTerm, 3);
+            result += (long) Math.pow(currentTerm, 3);
             currentTerm = nextTerm(currentTerm).intValue();
             countTerm++;
         }

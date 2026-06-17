@@ -20,7 +20,7 @@ public class PrimeNumberCubedUpToLimit extends PrimeNumber {
         while(this.currentTerm <= this.limit){
             this.printableTerms.append(currentTerm).append("^")
                     .append("3").append(" +");
-            result = (long) Math.pow(currentTerm, 3);
+            result += (long) Math.pow(currentTerm, 3);
             currentTerm = nextTerm(currentTerm).intValue();
         }
         return result;

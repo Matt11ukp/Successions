@@ -17,7 +17,7 @@ public class PrimeNumberOddUpToTerm extends PrimeNumber{
         while(countTerm < limit){
             this.printableTerms.append(currentTerm).append("^")
                     .append(exponent).append(" +");
-            result = (long) Math.pow(currentTerm, 3);
+            result += (long) Math.pow(currentTerm, 3);
             currentTerm = nextTerm(currentTerm).intValue();
             exponent += 2;
             countTerm++;
