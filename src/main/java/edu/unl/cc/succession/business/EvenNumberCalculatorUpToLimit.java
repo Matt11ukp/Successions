@@ -1,0 +1,69 @@
+package edu.unl.cc.succession.business;
+
+import edu.unl.cc.succession.model.Printable;
+import edu.unl.cc.succession.model.Succesionable;
+
+/**
+ * Representa la serie de numeros parees hasta un limite
+ * los constructores permiten que haya un comienzo si se desea, o que sea 0
+ * S = 2 + 4 + 6 + 8 + ... + N =
+ * @author Matias
+ */
+public class EvenNumberCalculatorUpToLimit implements Succesionable, Printable {
+    private Integer limit;
+    private Integer currentTerm;
+    private StringBuilder printableTerms; // string al que se le puede agregar mas texto
+    public EvenNumberCalculatorUpToLimit(Integer limit){
+        this(0, limit);
+    }
+
+    public EvenNumberCalculatorUpToLimit(Integer start, Integer limit){
+        start = validateLimit(start, "Down limit");
+        setLimit(limit);
+        this.currentTerm = start % 2 !=0 ? start + 1 : start;
+        printableTerms = new StringBuilder("S = ");
+    }
+
+    private Integer validateLimit(Number value, String label){
+        if(value == null){
+            throw  new IllegalArgumentException(label + " cannot be null");
+        }
+        if(value instanceof Integer){
+            if(value.intValue() < 0){
+                throw new IllegalArgumentException(label + " Limit cannot be negative");
+            }
+            return value.intValue();
+        } else{
+            throw new IllegalArgumentException(label + " Limit must be an integer");
+        }
+    }
+    @Override
+    public void setLimit(Number limit) {
+        this.limit = validateLimit(limit, "Upper Limit");
+    }
+
+    @Override
+    public Number calculate() {
+        long result = 0;
+        // si mando cero, mandara 2, y lo almacenara en el propio currentTerm
+        // intValue para transformar a entero
+        this.currentTerm = this.nextTerm(this.currentTerm).intValue();
+
+        while(this.currentTerm <= this.limit){
+            this.printableTerms.append(this.currentTerm).append(" + ");
+            result = result + this.currentTerm;
+            this.currentTerm = this.nextTerm(this.currentTerm).intValue();
+        }
+        return result;
+    }
+
+    @Override
+    public Number nextTerm(Number current) {
+        return current.intValue() + 2;
+    }
+
+    @Override
+    public String print() {
+        return printableTerms.toString();
+    }
+}
