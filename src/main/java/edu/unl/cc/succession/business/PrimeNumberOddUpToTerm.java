@@ -1,4 +1,10 @@
 package edu.unl.cc.succession.business;
+/**
+ * @author Freddy
+ * Esta clase calcula la suma de los primeros n términos de la sucesión de números
+ * primos elevados a potencias impares.
+ *
+ */
 
 public class PrimeNumberOddUpToTerm extends PrimeNumber{
     public PrimeNumberOddUpToTerm(Integer limit){
@@ -8,6 +14,7 @@ public class PrimeNumberOddUpToTerm extends PrimeNumber{
     public PrimeNumberOddUpToTerm(Integer start, Integer limit){
         super(start, limit);
     }
+
 
     @Override
     public Number calculate() {
