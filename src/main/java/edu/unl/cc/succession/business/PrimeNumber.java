@@ -3,7 +3,12 @@ package edu.unl.cc.succession.business;
 import edu.unl.cc.succession.model.Printable;
 import edu.unl.cc.succession.model.Succesionable;
 
-
+/**
+ * Clase abstracta que brinda los metodos para hacer que la base de las potencias sean primos
+ * de esta clase heredan las demas para implementar su calculo a su manera
+ * los constructores permiten que haya un comienzo si se desea, o que sea 0
+ * @author Matias Romero, Freddy Ordoñez, Luis Armijos, Ezequiel Chamba, Arlette Quezada
+ */
 
 public abstract class PrimeNumber implements Succesionable, Printable {
     protected Integer limit;

@@ -3,6 +3,11 @@ package edu.unl.cc.succession.business;
 import edu.unl.cc.succession.model.Printable;
 import edu.unl.cc.succession.model.Succesionable;
 
+/**
+ * Representa la serie de numeros primos hasta un limite
+ * S = 1 + 2 + 3 + 5 + 7 + 11 + 13 + .. + N:
+ * @author Matias Romero, Freddy Ordoñez, Luis Armijos, Ezequiel Chamba, Arlette Quezada
+ */
 
 public class PrimeNumberCalculatorUpToLimit extends PrimeNumber {
 

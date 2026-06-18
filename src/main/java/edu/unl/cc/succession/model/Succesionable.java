@@ -1,8 +1,9 @@
 package edu.unl.cc.succession.model;
 
 /**
- * @author Matias
+ * @author Matias Romero, Freddy Ordoñez, Luis Armijos, Ezequiel Chamba, Arlette Quezada
  */
+
 public interface Succesionable{
     /**
      * Setter the limit to succession

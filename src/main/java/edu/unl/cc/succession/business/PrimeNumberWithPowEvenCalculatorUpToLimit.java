@@ -1,5 +1,11 @@
 package edu.unl.cc.succession.business;
 
+/**
+ * Representa la serie de numeros primos elevados a la raiz de numeros pares hasta un limite
+ * (S = 1^(1/2) + 3^(1/4) + 5^(1/6) + 7^(1/8) + 11^(1/10) + 13^(1/12) ... + N):
+ * @author Matias Romero, Freddy Ordoñez, Luis Armijos, Ezequiel Chamba, Arlette Quezada
+ */
+
 public class PrimeNumberWithPowEvenCalculatorUpToLimit extends PrimeNumber{
 
     public PrimeNumberWithPowEvenCalculatorUpToLimit(Integer limit) {
