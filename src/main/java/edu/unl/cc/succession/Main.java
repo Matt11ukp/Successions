@@ -34,6 +34,8 @@ public class Main {
         int option = readOption(scanner);
         System.out.print("Debe ingresar un limite/N términos: ");
         int limit = scanner.nextInt();
+
+
         System.out.print("Desea ingresar un limite inferior? (1 = Si | 0 = No): ");
         int optionLimit = scanner.nextInt();
         int inferiorLimit = 0;
@@ -93,7 +95,6 @@ public class Main {
                 System.out.println("Opción inválida");
             }
         }
-
         if (serie != null) {
             Number result = serie.calculate();
             System.out.println(((Printable) serie).print());
