@@ -10,7 +10,6 @@ public class PrimeNumberWithPowEvenCalculatorUpToLimit extends PrimeNumber{
     public PrimeNumberWithPowEvenCalculatorUpToLimit(Integer limit) {
         super(limit);
     }
-
     public PrimeNumberWithPowEvenCalculatorUpToLimit(Integer start, Integer limit) {
         super(start, limit);
     }
