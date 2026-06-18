@@ -2,6 +2,10 @@ package edu.unl.cc.succession.business;
 
 import edu.unl.cc.succession.model.Printable;
 import edu.unl.cc.succession.model.Succesionable;
+/**
+ * Serie de primos elevados al cubo  hasta un limite (S = 1^3 + 3^3 + 5^3 + 7^3 + 11^3 + 13^3 ... + N^3):
+ * @author ARLETTE
+ * */
 
 public class PrimeNumberCubedUpToLimit extends PrimeNumber {
 
