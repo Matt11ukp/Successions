@@ -93,6 +93,7 @@ public class Main {
                 System.out.println("Opción inválida");
             }
         }
+
         if (serie != null) {
             Number result = serie.calculate();
             System.out.println(((Printable) serie).print());
