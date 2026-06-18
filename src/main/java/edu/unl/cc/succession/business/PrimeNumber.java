@@ -2,7 +2,6 @@ package edu.unl.cc.succession.business;
 
 import edu.unl.cc.succession.model.Printable;
 import edu.unl.cc.succession.model.Succesionable;
-
 /**
  * Clase abstracta que brinda los metodos para hacer que la base de las potencias sean primos
  * de esta clase heredan las demas para implementar su calculo a su manera

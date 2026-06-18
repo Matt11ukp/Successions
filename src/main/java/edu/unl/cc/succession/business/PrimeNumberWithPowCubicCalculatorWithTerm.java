@@ -1,5 +1,4 @@
 package edu.unl.cc.succession.business;
-
 /**
  * Representa la serie de numeros primos elevados a la raiz cubica con N terminos
  *  (S = 1^(1/3) + 3^(1/3) + 5^(1/3) + 7^(1/3) + 11^(1/3) + 13^(1/3)):

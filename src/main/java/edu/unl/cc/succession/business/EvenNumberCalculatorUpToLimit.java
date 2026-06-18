@@ -2,7 +2,6 @@ package edu.unl.cc.succession.business;
 
 import edu.unl.cc.succession.model.Printable;
 import edu.unl.cc.succession.model.Succesionable;
-
 /**
  * Representa la serie de numeros parees hasta un limite
  * S = 2 + 4 + 6 + 8 + ... + N =

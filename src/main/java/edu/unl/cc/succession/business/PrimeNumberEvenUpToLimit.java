@@ -1,6 +1,4 @@
 package edu.unl.cc.succession.business;
-
-
 /**
  * Representa la serie de numeros primos elevados a numeros pares hasta un limite
  * (S = 1^2 + 3^4 + 5^6 + 7^8 + 11^10 + 13^(12) ... + N):

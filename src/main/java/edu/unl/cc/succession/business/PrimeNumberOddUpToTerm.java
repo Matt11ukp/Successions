@@ -1,12 +1,5 @@
 package edu.unl.cc.succession.business;
 /**
- * @author Freddy
- * Esta clase calcula la suma de los primeros n términos de la sucesión de números
- * primos elevados a potencias impares.
- *
- */
-
-/**
  * Representa la serie de numeros primos elevados a numeros impares con N terminos
  *  (S = S = 1^1 + 3^3 + 5^5 + 7^7 + 11^9 + 13^11 ..):
  * @author Matias Romero, Freddy Ordoñez, Luis Armijos, Ezequiel Chamba, Arlette Quezada
