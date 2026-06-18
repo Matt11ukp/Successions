@@ -5,9 +5,8 @@ import edu.unl.cc.succession.model.Succesionable;
 
 /**
  * Representa la serie de numeros parees hasta un limite
- * los constructores permiten que haya un comienzo si se desea, o que sea 0
  * S = 2 + 4 + 6 + 8 + ... + N =
- * @author Matias
+ * @author Matias Romero, Freddy Ordoñez, Luis Armijos, Ezequiel Chamba, Arlette Quezada
  */
 public class EvenNumberCalculatorUpToLimit implements Succesionable, Printable {
     private Integer limit;

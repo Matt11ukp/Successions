@@ -1,5 +1,11 @@
 package edu.unl.cc.succession.business;
 
+/**
+ * Representa la serie de numeros primos elevados al cuadrado hasta un limite
+ * (S = 1^(1/2) + 3^(1/2) + 5^(1/2) + 7^(1/2) + 11^(1/2) + 13^(1/2)+ .. + N^(1/2):
+ * @author Matias Romero, Freddy Ordoñez, Luis Armijos, Ezequiel Chamba, Arlette Quezada
+ */
+
 public class PrimeNumberWithPowSquaredCalculatorUpToLimit extends PrimeNumber{
 
     public PrimeNumberWithPowSquaredCalculatorUpToLimit(Integer limit) {
