@@ -34,58 +34,66 @@ public class Main {
         int option = readOption(scanner);
         System.out.print("Debe ingresar un limite/N términos: ");
         int limit = scanner.nextInt();
+
+
+        System.out.print("Desea ingresar un limite inferior? (1 = Si | 0 = No): ");
+        int optionLimit = scanner.nextInt();
+        int inferiorLimit = 0;
+        if(optionLimit == 1){
+            System.out.print("Ingrese su limite inferior: ");
+            inferiorLimit = scanner.nextInt();
+        }
         scanner.nextLine();
         Succesionable serie = null;
         switch (option) {
             case (1): {
-                serie = new EvenNumberCalculatorUpToLimit(limit);
+                serie = new EvenNumberCalculatorUpToLimit(inferiorLimit, limit);
                 break;
             }
             case (2): {
-                serie = new PrimeNumberCubedUpToLimit(limit);
+                serie = new PrimeNumberCubedUpToLimit(inferiorLimit, limit);
                 break;
             }
             case (3): {
-                serie = new PrimeNumberCubedUpToTerm(limit);
+                serie = new PrimeNumberCubedUpToTerm(inferiorLimit, limit);
                 break;
             }
             case (4): {
-                serie = new PrimeNumberEvenUpToLimit(limit);
+                serie = new PrimeNumberEvenUpToLimit(inferiorLimit, limit);
                 break;
             }
             case (5): {
-                serie = new PrimeNumberOddUpToTerm(limit);
+                serie = new PrimeNumberOddUpToTerm(inferiorLimit, limit);
                 break;
             }
 
             case (6): {
-                serie = new PrimeNumberWithPowEvenCalculatorUpToLimit(limit);
+                serie = new PrimeNumberWithPowEvenCalculatorUpToLimit(inferiorLimit, limit);
                 break;
             }
 
             case (7): {
-                serie = new PrimeNumberWithPowCalculatorWithTerm(limit);
+                serie = new PrimeNumberWithPowCalculatorWithTerm(inferiorLimit, limit);
                 break;
             }
 
             case (8): {
-                serie = new PrimeNumberWithPowCubicCalculatorWithTerm(limit);
+                serie = new PrimeNumberWithPowCubicCalculatorWithTerm(inferiorLimit, limit);
                 break;
             }
 
             case (9): {
-                serie = new PrimeNumberWithPowSquaredCalculatorUpToLimit(limit);
+                serie = new PrimeNumberWithPowSquaredCalculatorUpToLimit(inferiorLimit, limit);
                 break;
             }
 
             case (10): {
-                serie = new PrimeNumberCalculatorUpToLimit(limit);
+                serie = new PrimeNumberCalculatorUpToLimit(inferiorLimit, limit);
                 break;
             }
             default: {
                 System.out.println("Opción inválida");
             }
-
         }
         if (serie != null) {
             Number result = serie.calculate();
